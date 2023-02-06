@@ -1,0 +1,77 @@
+.wd-background {
+    background-color: black;
+    left: 16px;
+}
+
+.wd-frame {
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.wd-search {
+    background-color: #464646;
+    color: white;
+    border-radius: 50px;
+    width: 450px;
+    padding: 8px;
+    position: absolute;
+    left: 16px;
+    border: 0;
+    top: 19px;
+}
+
+.wd-gear-icon {
+    position: absolute;
+    right: 12px;
+    top: 20px;
+}
+
+.wd-topic-link-selected {
+    padding: 16px;
+    font-family: Arial;
+    font-size: 15px;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 5px;
+    color: #1DA1F2;
+}
+
+.wd-topic-link {
+    padding: 16px;
+    font-family: Arial;
+    font-size: 15px;
+    text-decoration: none;
+    color: #6E767D;
+}
+
+.wd-horizontal-ruler {
+    border: gray;
+}
+
+.wd-subject {
+    position: relative;
+    font-family: Arial;
+    color: #6E767D;
+    font-size: 13px;
+    left: 16px;
+    top: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.wd-post-name {
+    font-size: 16px;
+    color: white;
+}
+
+.wd-author-name {
+    color: white;
+}
+
+.wd-post-image {
+    position: relative;
+    float: right;
+    right: 32px;
+    border-radius: 20px;
+    bottom: 45px;
+}

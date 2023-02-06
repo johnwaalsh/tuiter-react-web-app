@@ -1,0 +1,137 @@
+.wd-background {
+    background-color: black;
+    left: 16px;
+}
+
+.wd-frame {
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #2F3336;
+}
+
+.wd-bookmarks-title {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    left: 16px;
+    top: 12px;
+    font-family: Arial;
+}
+
+.wd-bookmarks-name {
+    position: absolute;
+    color: lightgray;
+    font-size: 13px;
+    left: 16px;
+    bottom: 12px;
+    font-family: Arial;
+}
+
+.wd-spacer {
+    border: none;
+}
+
+.wd-profile-image {
+    position: relative;
+    border-radius: 50%;
+    left: 16px;
+    top: 12px;
+}
+
+.wd-profile-name {
+    color: white;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.wd-profile-handle {
+    color: lightgray;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.wd-post-text {
+    font-size: 15px;
+    width: 506px;
+    color: white;
+    font-family: Arial;
+}
+
+.wd-post-image {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.wd-post-title {
+    font-size: 15px;
+    font-family: Arial;
+    color: white;
+}
+
+.wd-post-desc {
+    font-size: 15px;
+    font-family: Arial;
+    color: lightgray;
+}
+
+.wd-profile-area {
+    float: left;
+    width: 76px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.wd-post-area {
+    position: relative;
+    float: left;
+    width: 506px;
+    top: 12px;
+}
+
+.wd-preview {
+    border-radius: 20px;
+    position: relative;
+    top: 12px;
+}
+
+.wd-preview-desc {
+    position: relative;
+    padding: 12px;
+}
+
+.wd-interaction-icons {
+    position: relative;
+    top: 0px;
+}
+
+.wd-interaction-icon {
+    float: left;
+    padding-right: 80px;
+}
+
+.wd-icon-text {
+    position: relative;
+    left: 12px;
+    top: 18px;
+}
+
+.wd-icon-image {
+    position: relative;
+    top: 24px;
+}
+
+.wd-multiple-post {
+    position: relative;
+    clear: both;
+    top: 50px;
+    border-width: 1px 0px 0px 0px;
+}
+
+.wd-post-all {
+    padding-bottom: 50px;
+}
+
+.wd-like-text {
+    color: #FF0707;
+}
