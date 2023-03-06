@@ -19,7 +19,7 @@ const PostSummaryItem = (
                     <div className="fw-semibold">{post.title}</div>
                 </div>
                 <div className="col-3">
-                    <img className="float-end rounded-3 col-12" src={`/images/${post.image}`}/>
+                    <img alt="post" className="float-end rounded-3 col-12" src={`/images/${post.image}`}/>
                 </div>
             </div>
         </li>

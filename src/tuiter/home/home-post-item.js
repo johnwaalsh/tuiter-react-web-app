@@ -18,7 +18,9 @@ const HomePostItem = (
             "retweeted_name": "SpaceX",
             "retweeted_userName": "SpaceX",
             "retweeted_time": "16h",
-            "retweeted_comment": "Starlink for RVs now has over 100,000 customers! Access high-speed, low-latency internet on an as-needed basis anywhere Starlink provides active coverage -> starlink.com/rv"
+            "retweeted_comment": "Starlink for RVs now has over 100,000 customers! Access high-speed, low-latency internet on an as-needed basis anywhere Starlink provides active coverage -> starlink.com/rv",
+            "retweeted_profileImage": "/images/spacex_logo.jpg",
+            "show_this_thread": "true"
         }
     }
 ) => {
@@ -27,7 +29,7 @@ const HomePostItem = (
             <>{post.retweeted_by && <span class="text-secondary ms-5"><i className="bi bi-repeat"></i> <b> {post.retweeted_by} Retweeted</b></span>}</>
             <div class="row mb-3 p-2">
                 <div class="col-2">
-                    <img class="rounded-circle col-10" src={post.profileImage}/>
+                    <img class="rounded-circle col-10" alt="profile" src={post.profileImage}/>
                 </div>
                 <div class="col-10">
                     <div class="float-start">
@@ -39,11 +41,11 @@ const HomePostItem = (
                         <span>{post.comment}</span>
                     </div>
                     <>{post.postImage && <div class="border rounded-3 mt-2 col-12 d-flex flex-column">
-                        <img class="border rounded-3" src={post.postImage}/>
+                        <img class="border rounded-3" alt="post" src={post.postImage}/>
                     </div>}</>
                     <>{post.retweeted_name && <div class="border rounded-3 mt-2 col-12 p-2">
                         <div>
-                            <img className="float-start rounded-circle" height={24} src={post.retweeted_profileImage}/>
+                            <img className="float-start rounded-circle" alt="profile" height={24} src={post.retweeted_profileImage}/>
                             <div>
                                 <span className="ms-1 text-black"><b>{post.retweeted_name}</b> <i
                                     className="bi bi-patch-check-fill text-info"></i></span>
