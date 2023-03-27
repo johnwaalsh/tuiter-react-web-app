@@ -5,11 +5,14 @@ import {useLocation} from "react-router";
 const NavigationSidebar = () => {
     const {pathname} = useLocation();
     const paths = pathname.split('/')
-    const active = paths[2];
+    let active = paths[2];
+    if (active === '' || paths.length === 2) {
+        active = 'home'
+    }
     return (
         <div className="list-group">
             <a className="list-group-item" href="#tuiter-icon" id="tuiter-icon"><i className="bi bi-twitter"></i><span className="d-none d-xl-inline"> Tuiter</span></a>
-            <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
+            <Link to="/tuiter/" className={`list-group-item ${active === 'home'?'active':''}`}>
                 <i className="bi bi-house-door-fill"></i><span className="d-none d-xl-inline"> Home</span>
             </Link>
             <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
@@ -34,10 +37,9 @@ const NavigationSidebar = () => {
                     ${active === 'lists'?'active':''}`}>
                 <i className="bi bi-list-task"></i><span className="d-none d-xl-inline"> Lists</span>
             </a>
-            <a href="#tuiter-icon" className={`list-group-item
-                    ${active === 'profile'?'active':''}`}>
+            <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile'?'active':''}`}>
                 <i className="bi bi-person-fill"></i><span className="d-none d-xl-inline"> Profile</span>
-            </a>
+            </Link>
             <a href="#tuiter-icon" className={`list-group-item
                     ${active === 'more'?'active':''}`}>
                 <i className="bi bi-circle-fill"></i><span className="d-none d-xl-inline"> More</span>
