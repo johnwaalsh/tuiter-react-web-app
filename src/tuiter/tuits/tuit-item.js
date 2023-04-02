@@ -1,6 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../tuits/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 const TuitItem = (
     {
         post = {
@@ -22,7 +22,7 @@ const TuitItem = (
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
         console.log(id)
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return(
         <li className="list-group-item border-bottom-0">
@@ -32,7 +32,7 @@ const TuitItem = (
                 </div>
                 <div className="col-10">
                     <div className="float-start">
-                        <span className="text-black"><b>{post.userName}</b> <i
+                        <span className="text-black"><b>{post.username}</b> <i
                             className="bi bi-patch-check-fill text-info"></i></span>
                         <i className="fas fa-solid fa-check-circle text-black"></i>
                         <span> {post.handle} • {post.time}</span>
