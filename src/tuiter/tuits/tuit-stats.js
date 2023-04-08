@@ -30,32 +30,34 @@ const TuitStats = (
     let [disliked, setDisliked] = useState(post.disliked);
     const likeClickHandler = () => {
         let curr_likes = 0;
-        if (liked) {
-            curr_likes = likes - 1;
-        } else {
+        const newLiked = !liked
+        if (newLiked) {
             curr_likes = likes + 1;
+        } else {
+            curr_likes = likes - 1;
         }
         setLikes(curr_likes)
-        setLiked(!liked)
+        setLiked(newLiked)
         dispatch(updateTuitThunk({
             ...post,
             likes: curr_likes,
-            liked: liked
+            liked: newLiked
         }))
     }
     const dislikeClickHandler = () => {
         let curr_dislikes = 0;
-        if (disliked) {
-            curr_dislikes = dislikes - 1;
-        } else {
+        const newDisliked = !disliked
+        if (newDisliked) {
             curr_dislikes = dislikes + 1;
+        } else {
+            curr_dislikes = dislikes - 1;
         }
         setDislikes(curr_dislikes)
-        setDisliked(!disliked)
+        setDisliked(newDisliked)
         dispatch(updateTuitThunk({
             ...post,
             dislikes: curr_dislikes,
-            disliked: disliked
+            disliked: newDisliked
         }))
     }
 
